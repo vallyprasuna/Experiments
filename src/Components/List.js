@@ -22,6 +22,7 @@ class List extends Component {
           {title: 'Material UI', url: '/Material_UI', image_url: './abc.jpg', description: ''},
           {title: 'Hooks', url: '/Hooks', image_url: './abc.jpg', description: ''},
           {title: 'Singleton', url: '/Singleton', image_url: './abc.jpg', description: ''},
+          {title: 'JS Concepts', url: '/Concepts', image_url: './abc.jpg', description: ''},
         ]
     }
     render() {
@@ -31,7 +32,7 @@ class List extends Component {
                     <div>
                         <Grid container spacing={5} style={{padding: 24}}>
                             { this.state.experiments.map(currentExp => (
-                                <Grid item xs={12} sm={6} lg={4} xl={3}>
+                                <Grid item xs={12} sm={6} lg={3} xl={3}>
                                     <ExperimentCard
                                       experiment={currentExp}
                                     />
